@@ -1,0 +1,43 @@
+.appWrapper {
+    margin-top: 50px;
+    margin-left: 400px;
+    display: grid;
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 5px;
+    font-size: x-large;
+
+    grid-template-areas:
+"a a"
+"b b";
+
+}
+
+.valueStyle {
+  grid-area: a;
+    width: 140px;
+}
+.error {
+    color: red;
+}
+
+.buttonStyle {
+display: flex;
+    grid-area: b;
+    width: 75px;
+}
+.incStyle {
+margin-left: 20px;
+    width: 75px;
+}
+.resetStyle {
+    margin-left: 20px;
+    width: 75px;
+}
+
+.numericInput {
+    width: 100px;
+}
+
