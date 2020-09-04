@@ -1,35 +1,32 @@
 import React from 'react';
 import style from './App.module.css';
-import Display from "./Display";
 import Button from "./Button";
+import {CountValue} from "./CountValue";
 
 
 export type ComponentType = {
     value: number
     incFunction: () => void
-fiveValue: number
+    maxValue: number
     resetFunction: () => void
-
+    startValue: number
 }
 
 function Component(props: ComponentType) {
 
-
     return (
-<div className={style.appWrapper}>
+        <div>
+            <div className={style.appWrapper}>
 
-        <div className={style.appWrapper}>
+                <CountValue value={props.value} maxValue={props.maxValue} startValue={props.startValue} />
 
-            <Display value={props.value} fiveValue={props.fiveValue} />
-
-                <Button  incFunction={props.incFunction}
-                         resetFunction={props.resetFunction}
-                         fiveValue={props.fiveValue}
-                         value={props.value}
+                <Button incFunction={props.incFunction}
+                        resetFunction={props.resetFunction}
+                        maxValue={props.maxValue}
+                        value={props.value}
                 />
-
+            </div>
         </div>
-</div>
     )
 }
 
