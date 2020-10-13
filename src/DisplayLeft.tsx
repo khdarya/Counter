@@ -1,5 +1,6 @@
 import React, {ChangeEvent, useState} from 'react';
 import './DisplayLeft.css';
+import style from './App.module.css';
 
 type DisplayLeftType = {
     getStartValue: (value: number) => void
@@ -31,7 +32,8 @@ export const DisplayLeft = (props: DisplayLeftType) => {
     const disableBtn = startValue < 0 || startValue >= maxValue;
 
     return (
-        <div>
+        <div className={style.appWrapper}>
+            <div className={style.common}>
             <div>
                 Max Value
                 <input className={classForMaxValueInput} type={'number'} value={props.maxValue} onChange={getMaxValue}/>
@@ -41,6 +43,7 @@ export const DisplayLeft = (props: DisplayLeftType) => {
                 <input className={classForStartValueInput} type={'number'} value={props.startValue} onChange={getStartValue}/>
             </div>
             <button disabled={disableBtn} onClick={props.setCountValue}>Set</button>
+            </div>
     </div>
     )
 }
