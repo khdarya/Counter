@@ -10,6 +10,9 @@ function App() {
     const [maxValue, setMaxValue] = useState(5);
     const [startValue, setStartValue] = useState(0);
 
+    // const [maxValue, setMaxValue] = useState(Number(localStorage.getItem('maxValue')));
+    // const [startValue, setStartValue] = useState(Number(localStorage.getItem('startValue')));
+
     const setCounterText = () => {
             setValue('Valid value')
     }
