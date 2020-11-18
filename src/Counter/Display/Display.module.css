@@ -1,0 +1,20 @@
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 70px;
+    font-weight: bold;
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 24px;
+    border: 2px solid #cd00b2;
+    border-radius: 20px;
+    background-color: #e4e4fc;
+    color: #cd00b2;
+    margin: 10px;
+}
+
+.maxCount {
+    color: red;
+    font-size: 35px;
+}

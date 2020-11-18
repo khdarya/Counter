@@ -1,0 +1,21 @@
+.button {
+    padding: 10px 20px;
+    border: 2px solid mediumblue;
+    border-radius: 20px;
+    font: inherit;
+    font-weight: bold;
+    color: mediumblue;
+    background-color: ghostwhite;
+    margin: 5px;
+}
+
+.button:disabled {
+    padding: 10px 20px;
+    border: 2px solid #b42b89;
+    border-radius: 20px;
+    font: inherit;
+    font-weight: bold;
+    color: #b42b89;
+    background-color: #e4e4fc;
+    margin: 5px;
+}
